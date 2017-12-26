@@ -1,0 +1,146 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+div:focus{
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+#app {
+  height: 100%;
+}
+
+.app-main{
+  padding: 10px;
+}
+
+.el-table {
+  text-align: center;
+}
+
+.el-table th>.cell {
+  text-align: center;
+}
+
+.el-pagination {
+  margin: 5px;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.el-input {
+  width: auto;
+}
+
+.user_head {
+  line-height: 2;
+}
+
+.el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li {
+  margin: 0 5px;
+  background-color: #f3f4f5;
+  color: #5a5e66;
+  min-width: 30px;
+  border-radius: 2px;
+}
+
+.el-pagination.is-background .el-pager li.active {
+  margin: 0 5px;
+  background-color: #f3f4f5;
+  color: #5a5e66;
+  min-width: 30px;
+  border-radius: 2px;  
+}
+
+.el-pagination.is-background .el-pager li.active {
+  background-color: #409EFF;
+  color: #fff;
+}
+
+.el-table .sort-caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 0;
+  content: "";
+  position: absolute;
+  left: 3px;
+  z-index: 2;  
+}
+
+.el-table .sort-caret.ascending {
+  top: 5px;
+  border-top: none;
+  border-bottom: 5px solid #97a8be;
+}
+
+.el-table .sort-caret.descending {
+  bottom: 7px;
+  border-top: 5px solid #97a8be;
+  border-bottom: none;  
+}
+
+.el-table .sort-caret.ascending, .el-table .sort-caret.descending {
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+.expand-detail {
+  text-align: left;  
+}
+
+.expand-detail > div {
+  display: inline-block;
+  width: 49%;
+}
