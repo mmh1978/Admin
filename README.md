@@ -24,7 +24,7 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-# 这是用来同步代码的仓库，原项目地址：
+> 这是用来同步代码的仓库，使用了一些开源的后台框架，原项目地址：
 
 git clone https://github.com/PanJiaChen/vueAdmin-template.git
 
